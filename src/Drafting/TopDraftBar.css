@@ -1,0 +1,92 @@
+
+
+.TopDraftBar{
+
+    background-color: rgba(40,40,40,0.7);
+    width:100%;
+    margin-top:-16rem;
+    margin-bottom:1rem;
+    overflow-x:scroll;
+    height:16rem;
+    z-index: 1;
+    top:4.5rem;
+
+}
+
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding-top: 0px;
+    padding-bottom: 0px;   margin-top:0rem;
+    margin-bottom:1rem;
+    overflow-x:scroll;
+
+}
+
+.TopScrollBarTitle{
+    color:white;
+    margin-left: 1.5rem;
+}
+
+.ScrollTopBar {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display:flex;
+    grid-template-rows: 10rem;
+    grid-auto-flow: column;
+    gap: 10px;
+    width:576rem;
+}
+
+
+.PokemonButton{
+    height: 100%;
+    width:9rem;
+}
+
+.PokemonTitle{
+    font-family: "Bree Serif";
+    font-size: 1.2rem;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    padding:5px;
+    margin-top:5%;
+    margin-left:30%;
+    border-radius:1rem;
+}
+
+
+@media (max-width: 1300px) {
+    .TopDraftBar{
+
+    }
+    .PokemonButton{
+        height: 5rem;
+        width:5rem;
+    }
+    .PokemonTitle{
+        font-family: "Bree Serif";
+        font-size: .7rem;
+        background-color: orangered;
+        color: white;
+        font-weight: bold;
+        padding:5px;
+        margin-top:5%;
+        margin-left:30%;
+        border-radius:1rem;
+    }
+    .PokemonImage{
+        height:30px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 60%;
+        margin-top: 20%;
+    }
+}
+@media (mscax-width: 1300px) {
+
+}

@@ -1,0 +1,127 @@
+
+
+.TabNavigationBar nav{
+    display: flex;
+    min-height: 40px;
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-between;
+    padding:0rem;
+    border: 2px solid skyblue;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    background-color: rgba(255,255,255,.7);
+}
+
+
+
+.TabNavigationBar nav .title{
+     width: 16rem;
+     margin: 1.2rem;
+     margin-left: 4rem;
+     font-size: 1.5rem;
+     font-family: "Bree Serif";
+     font-weight: bolder;
+     color: deepskyblue;
+     text-decoration: none;
+
+
+ }
+.TabNavigationBar nav .title a{
+    text-decoration: none;
+
+
+}
+.TabNavigationBar nav ul{
+    margin-right: 2rem;
+    display:flex;
+}
+.TabNavigationBar nav ul li{
+    list-style:none;
+
+}
+
+.TabNavigationBar nav ul li a{
+    text-decoration: none;
+    padding: .4rem;
+    margin: 0rem 0.5rem;
+    border-radius:0.5rem;
+}
+.TabNavigationBar nav ul li a:not(active):hover{
+    background-color: rgba(240,240,240,.9);
+}
+
+.TabNavigationBar nav.Menu .menuBar{
+    display:flex;
+    width: 35px;
+    height: 5px;
+    background-color: skyblue;
+    margin: 6px 0;
+}
+.TabNavigationBar nav .Menu{
+    display:none;
+    position: absolute;
+    top: 1.2rem;
+    right: 18%;
+    background-color: rgba(240,240,240,0);
+    border-radius: .5rem;
+    font-family: bree serif;
+    font-size: large;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3.2rem;
+    height:2rem;
+    marginTop: -5;
+
+    margin-right: 5px;
+    border: 1px solid skyblue;
+}
+.TabNavigationBar nav.Menu span{
+    display: flex;
+    min-height:0.4rem;
+    width: 60%;
+    background-color: skyblue;
+
+    border-radius: 0.2rem;
+}
+
+.TabNavigationBar .tokens{
+    position:relative;
+    top: 10px;
+    left: -3px;
+    width:35px;
+    vertical-align: baseline;
+    height:35px;
+    display:inline-block;
+}
+
+
+@media (max-width: 1300px) {
+    .TabNavigationBar nav .Menu{
+        display:flex;
+    }
+
+    .TabNavigationBar nav{
+        flex-direction: column;
+
+    }
+    .TabNavigationBar nav ul{
+        display: none;
+        flex-direction: column;
+        width:90%;
+        margin-bottom: 1rem;
+    }
+    .TabNavigationBar  nav .open{
+        display:flex;
+    }
+
+    .TabNavigationBar nav ul li{
+        width:100%;
+        text-align:center;
+    }
+    .TabNavigationBar nav ul li a{
+        margin:0.2rem 0.5rem
+    }
+    
+}

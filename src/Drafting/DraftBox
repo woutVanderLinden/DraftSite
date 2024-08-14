@@ -1,0 +1,84 @@
+import React,{useState} from 'react';
+import * as colors from "../Colors";
+
+import './Draft.css'
+
+
+export default class DraftBox extends React.Component {
+    constructor(props){
+        super(props);
+        /*
+        this.state={
+            color: this.props.color,
+            pokemonlist:  this.props.pokemonList,
+            visible: this.props.visible
+
+        }
+        */
+
+
+
+    }
+
+    const elementCreation = (pokemons) => pokemons.map(function(object) {
+        return (
+            <div>
+                <button className="PokemonButton"><div className="PokemonTitle">{object}</div>
+                    <img className="PokemonImage" src="././assets/nuzleaf.png"/></button>
+            </div>
+        );
+    });
+
+    render () {
+
+        return <div className={ this.state.visible? "Tier1Box": "ClosedBox"}  style={colors.backgroundColor(this.props.color)}>
+
+            <div className="TierTitle" ><h3>Tier 1:</h3></div>
+            <div className="PokemonBox" >
+                <div className="PokemonScrollBox">
+                    <!--   {this.state.pokemonlist} -->
+                </div>
+            </div>
+        </div>
+    }
+    /*
+    setVisible = (newbool) =>{
+        this.setState({visible: {newbool}});
+    }
+
+    render (){
+
+        return   <div className={ this.state.visible? "Tier1Box": "ClosedBox"}  style={colors.backgroundColor(this.props.color)}>
+
+            <div className="TierTitle" ><h3>Tier 1:</h3></div>
+            <div className="PokemonBox" >
+                <div className="PokemonScrollBox">
+                    <!--   {this.state.pokemonlist} -->
+                </div>
+            </div>
+        </div>
+    }
+    /*
+        <div className={ this.state.visibleTiers.includes(1)? "Tier1Box" : "ClosedBox"}>
+
+                <div className="TierTitle"  style={colors.backgroundColor(colors.tier1Color)}><h3>Tier 1:</h3></div>
+                <div className="PokemonBox" style={colors.backgroundColor(colors.tier1Color)}>
+                    <div className="PokemonScrollBox">
+                        {element}
+                    </div>
+                </div>
+            </div>
+
+     */
+    /*
+    <div className={ this.state.visible? "Tier1Box": "ClosedBox"}  style={colors.backgroundColor(this.props.color)}>
+
+            <div className="TierTitle" ><h3>Tier 1:</h3></div>
+            <div className="PokemonBox" >
+                <div className="PokemonScrollBox">
+                 <!--   {this.state.pokemonlist} -->
+                </div>
+            </div>
+        </div>
+     */
+}

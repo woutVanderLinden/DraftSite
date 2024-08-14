@@ -1,0 +1,63 @@
+.TierBox{
+
+    margin-top: 0px;
+    min-width:12rem;
+    margin-bottom: 0px;
+}
+.TiersBox{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -5px;
+    min-width:12rem;
+    margin-bottom: 0px;
+}
+.PokemonBox{
+    margin: 0rem 0rem;
+    padding: 1rem 1rem;
+
+
+}
+.PlaceHolder{
+    height:18rem;
+}
+
+.PlaceHolderBottom{
+     height:40px;
+ }
+.PlaceHolderTop{
+    height:30px;
+}
+.PokemonScrollBox{
+    background-color: azure;
+    border: 2px solid honeydew;
+    display:flex;
+    min-height: 10rem;
+    grid-template-rows: 10rem;
+    grid-auto-flow: column;
+    border-color: gray;
+    border-style: inset;
+
+}
+
+.ClosedBox{
+    display: none;
+}
+
+.TierTitle{
+    border: 2px solid gray;
+    margin-top:0px;
+    margin-bottom: 0;
+    margin-left:20px;
+    margin-right:20px;
+    Font-Size: 2rem;
+    Font-weight:bold;
+    Font-family: "Bree Serif";
+
+}
+.TierTitle h3{
+    Font-family: "Bree Serif";
+    text-align: center;
+    padding: 0px;
+    margin: 0px 0px;
+}
